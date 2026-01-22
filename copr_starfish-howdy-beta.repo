@@ -1,0 +1,10 @@
+[copr:copr.fedorainfracloud.org:starfish:howdy-beta]
+name=Copr repo for howdy-beta owned by starfish
+baseurl=https://download.copr.fedorainfracloud.org/results/starfish/howdy-beta/fedora-43-x86_64/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://download.copr.fedorainfracloud.org/results/starfish/howdy-beta/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1

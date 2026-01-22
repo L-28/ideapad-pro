@@ -1,0 +1,56 @@
+
+include:
+    - workstation-ostree-config/silverblue.yaml
+
+# Kept in the leaf manifest as they are overwritten by Pungi in composes
+
+repos:
+    - fedora-43
+    - fedora-43-updates
+    - fedora-cisco-openh264
+    - rpmfusion-free
+    - rpmfusion-free-updates
+    - rpmfusion-nonfree
+    - rpmfusion-nonfree-updates
+    - copr:copr.fedorainfracloud.org:starfish:howdy-beta
+    - rpmfusion-free-tainted
+
+packages:
+    - fish
+    - micro
+    - netcat
+    - fastfetch
+    - bsd-games
+    - rogue
+    #- arp-scan
+    - evtest
+    - telnet
+    - adw-gtk3-theme
+    - input-remapper
+    - waypipe
+    - ibm-plex-fonts-all
+    - steam-devices
+    #- mozilla-openh264
+    - steam
+    - mpd
+    - gnome-software-rpm-ostree
+    - howdy
+    - howdy-gtk
+    - libdvdcss
+    - gcc
+    - gcc-c++
+    - seahorse-nautilus
+    - nautilus-gsconnect
+    - bign-handheld-thumbnailer
+    - ffmpeg
+    - ffmpeg-libs
+    - x264
+    - mesa-va-drivers-freeworld
+    - libva-utils
+    - gstreamer1-libav
+    - gstreamer1-plugins-bad-freeworld
+    - gstreamer1-plugins-ugly
+    - gstreamer1-plugins-good
+
+remove-from-packages:
+    - [ noopenh264 ]
